@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto',Arial, sans-serif;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    text-align: center;
+    margin: 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.hiddenRight{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translate(0);
+}
+
+.about-me {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-me h2 {
+    text-align: left;
+    font-size: 4em;
+    margin: 0px 0px 0px 75px;
+    color:#003854
+}
+
+.about-me p{
+    text-align: left;
+    font-size: 1.25em;
+    margin: 30px 0px 0px 80px;
+    color:#333;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.squig {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.squig svg{
+    position: relative;
+    display: block;
+    width: 129%;
+    height: 200px;
+}
+
+.squig{
+    fill: #0284C7;
+}
+
+#bottom{
+    background-color: #0284C7;
+    fill:#FFFFFF;
+}
+
+#bottom svg{
+    width: 100%;
+    height: 200px;
+}
+
+.work-experience {
+    width: 100%;
+    padding: 0px 0px 50px 0px;
+    background-color: #0284C7;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    z-index: 50;
+    background-color: #fff;
+}
+  
+header .logo a {
+    position: relative;
+    font-weight: 700;
+    color: black;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+  
+.nav_links {
+    list-style: none;
+    position: relative;
+    display: flex;
+}
+  
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+}
+  
+.nav_links li a {
+    position: relative;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+  
+.nav_links li a:hover {
+    color: rgb(169, 169, 169);
+}
+  
+.nav_btn button {
+    padding: 9px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transform: all 0.3s ease 0s;
+    color: #0284c7;
+    border: 1px solid #0284c7;
+    background-color: #fff;
+}
+  
+.nav_btn button:hover {
+    background-color: #0284c7;
+    color: #fff;   
+}
+
+.work-experience h2{
+    margin: 0;
+    font-size: 2em;
+    color:#FFFFFF;
+}
+
+.about-icons {
+    padding: 12px 0;
+    display: flex;
+    justify-content: start;
+    z-index: 99;
+    position: relative;
+    text-align: start;
+    margin: 30px 0px 0px 65px;
+  }
+  
+.about-icons a {
+    width: 65px;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    text-decoration: none;
+  }
+  
+.about-icons i {
+    font-size: 60px;
+    color: #6b7280;
+}
+  
+.about-icons i:hover {
+    color: #7e8187;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.work-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+}
+
+.image-item {
+    text-align: center;
+    max-width: 350px;
+    margin-top: 50px;
+}
+
+.image-item h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.image-item a:hover img {
+    transform: scale(1.05);
+}
+
+.image-item .buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.buttons .btn {
+    background-color: #003854;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 45%;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
