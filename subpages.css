@@ -1,0 +1,44 @@
+html, body{
+    min-height: 100vh;
+}
+
+.img-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1%;
+    padding-bottom: 30px;
+}
+
+.img-container img {
+    min-width: 49.5%;
+    max-width: 49.5%;
+    max-height: 50vh;
+}
+
+p{
+    padding-bottom: 100px;
+}
+
+.Info h2 {
+    font-size: max(1.5em, 4vw);
+    margin: 100px 0px 0px 75px;
+    color:#003854
+}
+
+.Info p{
+    text-align: left;
+    font-size: max(1em, 2vw);
+    margin: 50px 0px 0px 20px;
+    color:#333;
+}
+
+.squig{
+    position: absolute;
+    z-index: -10;
+}
+
+span{
+    font-weight: bold;
+    font-size: max(1.1em, 2.2vw);
+    color:rgb(147, 137, 0);
+}
