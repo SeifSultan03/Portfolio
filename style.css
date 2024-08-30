@@ -11,7 +11,9 @@ body {
     -ms-user-select: none; 
     user-select: none;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 h1 {
     color: #333;
 }
@@ -22,7 +24,7 @@ button {
     cursor: pointer;
 }
 
-.about-section {
+#about-section {
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -178,13 +180,13 @@ header .logo a {
     color: #fff;   
 }
 
-.work-experience h2{
+.work-title h2{
     margin: 0;
     font-size: 2em;
     color:#FFFFFF;
 }
 
-.work-experience span{
+.work-title span{
     font-family: "Montserrat", sans-serif;
     font-size: 2.5em;
     color:#ffffff;
@@ -289,4 +291,55 @@ header .logo a {
 
 .image-item:nth-child(3){
     transition-delay: 300ms;
+}
+
+.skills-title h2{
+    margin: 0;
+    font-size: 2em;
+    color:#003854;
+}
+
+.skills-title span{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5em;
+    color:#003854;
+}
+
+.skills-title p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    color:#003f5f;
+}
+
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 100px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-item img {
+    width: 100px;
+    height: 100px;
+}
+
+.skill-name {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+#work-section{
+    background-color:#0284C7;
+}
+
+section{
+    padding-top: 20px;
 }

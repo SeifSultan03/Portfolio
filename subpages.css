@@ -1,5 +1,10 @@
-html, body{
+body{
     min-height: 100vh;
+    background-color: rgb(245, 245, 245);
+}
+
+#bottom{
+    fill:rgb(245, 245, 245);
 }
 
 .img-container {
@@ -12,22 +17,28 @@ html, body{
 .img-container img {
     min-width: 49.5%;
     max-width: 49.5%;
-    max-height: 50vh;
+    height: auto;
 }
 
 p{
     padding-bottom: 100px;
 }
 
+.Info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .Info h2 {
-    font-size: max(1.5em, 4vw);
+    font-size: max(1.3em, 3.5vw);
     margin: 100px 0px 0px 75px;
     color:#003854
 }
 
 .Info p{
     text-align: left;
-    font-size: max(1em, 2vw);
+    font-size: max(0.9em, 1.6vw);
     margin: 50px 0px 0px 20px;
     color:#333;
 }
@@ -39,6 +50,14 @@ p{
 
 span{
     font-weight: bold;
-    font-size: max(1.1em, 2.2vw);
+    font-size: max(1em, 1.8vw);
     color:rgb(147, 137, 0);
+}
+
+.extra{
+    text-decoration: underline;
+    font-style:italic;
+    font-weight: normal;
+    font-size: max(0.9em, 1.6vw);
+    color:#333;
 }
