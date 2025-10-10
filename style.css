@@ -30,6 +30,13 @@ button {
     padding: 20px;
 }
 
+@media (max-width: 768px) {
+  #about-section {
+    flex-direction: column-reverse;
+  }
+}
+
+
 .hidden{
     opacity: 0;
     filter: blur(5px);
@@ -180,6 +187,21 @@ header .logo a {
     color: #fff;   
 }
 
+#dark-mode-button {
+    position: relative;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: black;
+    background-color: gray;
+    border-radius: 5px;
+    border: none;
+}
+  
+#dark-mode-button:hover {
+    width: 102%;
+    height: 104%;
+}   
+
 .work-title h2{
     margin: 0;
     font-size: 2em;
@@ -250,7 +272,8 @@ header .logo a {
 
 .image-item img {
     width: 100%;
-    height: auto;
+    height: 220px; /* or adjust to 200–250px as you prefer */
+    object-fit: cover; /* keeps proportions but crops neatly */
     border-radius: 8px;
     transition: transform 0.3s;
 }
@@ -291,6 +314,10 @@ header .logo a {
 
 .image-item:nth-child(3){
     transition-delay: 300ms;
+}
+
+.image-item:nth-child(4){
+    transition-delay: 450ms;
 }
 
 .skills-title h2{
@@ -343,3 +370,4 @@ header .logo a {
 section{
     padding-top: 20px;
 }
+
